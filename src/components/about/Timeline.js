@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { IoSchool   } from "react-icons/io5";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import '../../Animation/AnimatedLetter.scss'
 
 import { VerticalTimeline , VerticalTimelineElement } from 'react-vertical-timeline-component' 
 import 'react-vertical-timeline-component/style.min.css'
-import AnimatedLetter from '../../Animation/AnimatedLetter'
 function Timeline() {
   
   return (

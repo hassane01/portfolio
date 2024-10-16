@@ -27,7 +27,7 @@ function Home() {
               <div className='name-container' >
               <span className={`${letterclass} _13`}> I</span>
               <span className={`${letterclass} _14`}>'m</span>
-            <img id='letimg' src={logos}/>
+            <img id='letimg' src={logos} alt="Logo "/>
             <AnimatedLetter letterclass={letterclass} strarray={nameArray} idx={15}/> 
             </div>
             <br/>

@@ -4,7 +4,7 @@ import './Sidebar.scss'
 import logo from '../../assets/images/fullversion.png'
 import { FaNetworkWired } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faLink, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { RxHamburgerMenu } from "react-icons/rx";
 function Sidebar() {
@@ -14,7 +14,7 @@ function Sidebar() {
       
     <div className='nav-bar' id={isSidebareopen?'isdispalyed' : 'isntdisplayed' }>
       <Link className='logo' to='/'>
-        <img  src={logo}/>
+        <img  src={logo}  alt="navbar logo"/>
         
       </Link>
       <nav>

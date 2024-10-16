@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../Works/Works.scss'
 import { GiCancel } from "react-icons/gi";
 import { useParams } from 'react-router-dom';
@@ -8,10 +8,11 @@ import { FiGithub } from "react-icons/fi";
 function WorkInfo({Isdisplayed , setIsdisplayed }) {
    const id = useParams()
 
-     const project = data.filter(proj=>proj.id == id.id)
+     const project = data.filter(proj=>proj.id === parseInt(id.id))
     
   return (
     <div className='work-info'>
+      {console.log(typeof(id.id))}
       <GiCancel className='close-icn' onClick={()=>setIsdisplayed(!Isdisplayed)}/>
      <div className='gif-container'>
      </div>
