@@ -1,0 +1,303 @@
+.projects-container{
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    top:0;
+    margin: auto;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+    #work-header{
+        font-family: 'Coolvetica';
+        font-size: 56px;
+        color:#ffd700 ;
+        letter-spacing: 2px;
+        margin-top: 65px;
+    }
+    .grid-cards{
+            width: 82%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 900px;
+            gap: 20px;
+            text-align: center;
+            row-gap: 100px;
+            justify-items: center;
+        }
+}
+.card-content:nth-child(even){
+    align-self: end;
+  }
+.card-content:nth-child(odd){
+    align-self: start;
+  }
+  
+ 
+
+.card-content {
+    background-color: #fff;
+    width: 400px;
+    box-shadow:   0px 1px 20px 5px lightyellow;
+    height: 650px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative; /* Ensure absolute positioning within it works */
+     /* Ensures no overflow occurs */
+    transition: all ease-in-out 0.2s;
+    
+    animation: floate 6s 1s infinite ;
+    button{
+    width: 120px;
+    height: 50px;
+   opacity: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family:"Coolvetica" ;
+    font-size: 15px;
+    border: 3px solid  white;
+    transition: all ease-in-out 0.5s;
+    box-sizing: content-box;
+    svg{
+       opacity: 0;
+        transition: all ease-in-out 0.5s;
+    }
+    &:hover{
+       
+        svg{
+            
+            color: black;
+            opacity: 1;
+            
+            transform: translateX(10px);
+           
+        }
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        border-color: black;
+        opacity: 1;
+        
+
+    }
+    }
+
+    
+}
+
+.img-card {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 0.2s;
+
+}
+
+.card-content:hover {
+    transform: scale(1.10 , 1.10);
+    animation-play-state: paused;
+    .img-card{
+        height: 100%;
+        opacity: 0.3;
+    }
+    .card-text{
+        background-color: transparent;
+        height: auto;
+    }
+    button{
+        animation: backInDown 1s  forwards ;
+    }
+}
+
+.card-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 30%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0; /* Fixes the text position at the bottom */
+    z-index: 1; 
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    h1{
+        font-size: 35px;
+    color: #022c43;
+    padding: 0;
+    margin: 0;
+    }
+    span{
+        color: #022c43;
+    }
+}
+
+
+
+
+
+.project-info-wraper {
+    position: fixed; /* Fixed to viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    z-index: 999999999;      /* Ensure it's on top */
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.work-info{
+    width: 60%;    /* Adjust width as needed */
+    height: 80%;   /* Adjust height as needed */
+    background-color: #022c43;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:  inset 0px 1px 20px 5px lightyellow;
+
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .close-icn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            &:hover{
+                cursor: pointer;
+            }
+    }
+}
+
+
+.gif-container{
+    width: 100%;
+    height: 70%;
+    
+}
+.info-data{
+    width:100% ;
+    height: 30%;
+    
+
+    display: flex;
+    flex-direction: row;
+    .proj-descrpt{
+        flex: 80%;
+        
+        padding: 20px;
+        color: white;
+       overflow: hidden;
+       box-sizing: border-box;
+        p{
+            font-size: 15px;
+            opacity: 0;
+            animation: fadeIn 1s 0.5s forwards;
+
+        }
+
+    }
+    
+    .proj-link{
+        flex: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        button{
+            width: 60%;
+            height: 40px;
+            background-color: transparent;
+            color: #ffd700;
+            font-size: 16px;
+            font-family: 'Helvetica Neue';
+            border: 1px solid #ffd700;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                background-color: #ffd700;
+                color: #022c43;
+                cursor: pointer;
+                border-radius: 20px;
+                svg{
+                    color: #022c43;
+                }
+            }
+            svg{
+                font-size: 30px;
+            }
+
+
+        }
+      
+    }
+
+}
+
+@media (max-width:920px){
+    .projects-container .grid-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projects-container .grid-cards{
+        grid-auto-rows: unset;
+    }
+}
+@media (max-width:900px){
+    .projects-container{
+        width: 100%;
+        height: 90%;
+        position: static;
+        min-height: 566px;
+        top: -920px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media (max-width:420px){
+    .card-content{
+        width: 300px;
+        height: 550px;
+        
+    }
+    .card-content .card-text h1{
+        font-size: 25px;
+    }
+    .card-content button{
+        top: -204px;
+    }
+    .projects-container #work-header{
+        font-size: 30px;
+    }
+}
