@@ -11,29 +11,36 @@ function Logo() {
     const bgref = useRef(0)
     const outlinrLogoref =useRef()
     const solidLogoRef = useRef()
-    useEffect(()=>{
-
-
-        gsap.timeline()
-        .to(bgref.current , {duration:1 , opacity:1})
-        .to(outlinrLogoref.current , {
-          strokeDashoffset: 0, 
-        duration: 3, 
-        ease: "power1.inOut"
-        })
-
-        gsap.fromTo(solidLogoRef.current , {
-            opacity:0,
+    useEffect(() => {
+      const timeline = gsap.timeline(); // Store the GSAP timeline in a variable
+  
+      timeline
+        .to(bgref.current, { duration: 1, opacity: 1 })
+        .to(outlinrLogoref.current, {
+          strokeDashoffset: 0,
+          duration: 3,
+          ease: "power1.inOut",
+        });
+  
+      gsap.fromTo(
+        solidLogoRef.current,
+        {
+          opacity: 0,
         },
-    {
-        opacity:1,
-        delay:4,
-        duration:4,
-        
-
-        
-    })
-    },[])
+        {
+          opacity: 1,
+          delay: 4,
+          duration: 4,
+        }
+      );
+  
+      
+      return () => {
+        if (timeline) {
+          timeline.kill(); 
+        }
+      };
+    }, []);
   return (
     <div className='logo-conrainer' ref={bgref}>
       <img

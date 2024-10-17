@@ -9,11 +9,15 @@ function Home() {
   const [letterclass , setletterclass] = useState('text-animation')
   const nameArray = ['a','s','s','a','n','e']
   const jobArray = ['F','r','o','n','t','-','e','n','d' , ' ','D','e','v','e','l','o','p','e','r']
-  useEffect(()=>{
-    return setTimeout(()=>{
-      setletterclass('text-animation-hover')
-    },4000)
-  },[])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setletterclass('text-animation-hover');
+    }, 4000);
+  
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
     <>
     <div className='container home-page'>
