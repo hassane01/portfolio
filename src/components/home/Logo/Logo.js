@@ -4,18 +4,23 @@ import React from 'react'
 
 import './Logo.scss'
 import logoback from '../../../assets/images/fullversion.png'
-import gsap from 'gsap-trial'
-import { DrawSVGPlugin } from 'gsap-trial/all'
+import gsap from "gsap-trial";
+
+
 function Logo() {
     const bgref = useRef(0)
     const outlinrLogoref =useRef()
     const solidLogoRef = useRef()
     useEffect(()=>{
-        gsap.registerPlugin(DrawSVGPlugin)
+
 
         gsap.timeline()
         .to(bgref.current , {duration:1 , opacity:1})
-        .from(outlinrLogoref.current ,{drawSVG:0 , duration:10})
+        .to(outlinrLogoref.current , {
+          strokeDashoffset: 0, 
+        duration: 3, 
+        ease: "power1.inOut"
+        })
 
         gsap.fromTo(solidLogoRef.current , {
             opacity:0,

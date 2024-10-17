@@ -30,6 +30,8 @@
 .svg-container{
     stroke: #ffd700;
     stroke-width: 2px;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
 }
 @media (max-width:1270px){
     .logo-conrainer{
