@@ -140,8 +140,10 @@
 @media (max-width: 768px){
     .home-page .home-text-zone{
         right: 0;
+        left:0;
         margin: 90px auto;
         font-size: 3rem;
+        width: 60%;
     }
     .home-text-zone h1{
         font-size:30px ;
@@ -159,8 +161,11 @@
     
 }
 @media (max-width: 380px){
+    .home-page .home-text-zone {
+        width: 73%;
+    }
     .home-text-zone h1{
-        font-size: 18px;
+        font-size: 27px;
     }
     .home-text-zone h2 {
         font-size: 9px;

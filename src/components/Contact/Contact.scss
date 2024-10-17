@@ -198,11 +198,27 @@ input , textarea{
         right: 0;
         width: 100%;
     }
-    .contact-info{
+    .contact-info {
         top: 100%;
         right: 0;
+        font-size: 14px;
+    }
+    .contact-form {
+        position: relative;
+        width: 90%;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     .contact-text-zone{
-        width: 88%;
+        width: 100%;
+        left: 0;
+        h1 , P{
+            padding-left: 34px;
+        }
     }
 }
+
