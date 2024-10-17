@@ -39,7 +39,12 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1.2s;
 }
-
+@media (max-width:780px){
+    .container{
+        top: 18%;
+    }
+    
+}
 @media (max-width: 380px){
     .tags{
         font-size: 10px;
