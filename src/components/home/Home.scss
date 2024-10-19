@@ -1,0 +1,173 @@
+.home-page{
+    .home-text-zone{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+
+    }
+    
+    h1{
+        color: white;
+        font-size: 53px;
+        position: relative;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        position: relative;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            opacity: 0.6;
+            position: absolute;
+            top: -10px;
+            left: -30px;
+
+        }
+        &::after{
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            opacity: 0.6;
+            position: absolute;
+            bottom:-17px;
+            left: auto;
+            animation: fadeIn 1s 1.7s backwards ;
+
+        }
+       
+            
+        img{
+            width: 32px;
+            margin-left: 10px;
+           height: 90px;
+            bottom: 0;
+            opacity: 0;
+            margin-right: 3px;
+            animation: rotateIn 1s linear  ;
+            animation-fill-mode: forwards;
+            animation-delay: 1.4s;
+            display: inline-block;
+          
+           
+            
+
+        
+       }
+    }
+    h2{
+        color:#8d8d8d ;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+        margin-bottom: 32px;
+        
+    }
+    .flat-button{
+        color: #ffd700;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: sans-serif;
+        text-decoration: none;
+        letter-spacing: 4px;
+        border: 1px solid #ffd700;
+        padding: 10px 18px;
+       float: left;
+       animation: fadeIn 1s 1.8s backwards  ;
+       white-space: nowrap;
+       transition: all 0.3s ease-in-out;
+
+        &:hover{
+            background-color: #ffd700;
+            color: black;
+         
+        }
+    }
+}
+
+.name-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: -92px;
+    flex-direction: row;
+   text-align: center;
+    align-items: center;
+    img{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:1270px){
+    .home-text-zone h1   {
+        font-size:2rem;
+    }
+    .home-text-zone h1 .name-container img {
+        width: 25px;
+        height: 70px;
+    }
+   .name-container{
+    margin-bottom: -80px;
+   }
+   .home-page .flat-button{
+    font-size: 1rem;
+   }
+  
+}
+@media (max-width:910px){
+    .home-text-zone h1   {
+        font-size:1rem;
+    }
+    .home-text-zone h1 .name-container img {
+        width: 15px;
+        height: 60px;
+    }
+   .name-container{
+    margin-bottom: -60px;
+   }
+   .home-page .flat-button{
+    font-size: 0.5rem;
+   }
+  
+}
+
+@media (max-width: 768px){
+    .home-page .home-text-zone{
+        right: 0;
+        left:0;
+        margin: 90px auto;
+        font-size: 3rem;
+        width: 60%;
+    }
+    .home-text-zone h1{
+        font-size:30px ;
+    }
+    .home-text-zone h1 .name-container img {
+        width: 25px;
+        height: 40px;
+    }
+    .name-container{
+        margin-bottom: -40px;
+       }
+       .name-container img {
+        margin-bottom: 12px;
+    }
+    
+}
+@media (max-width: 380px){
+    .home-page .home-text-zone {
+        width: 73%;
+    }
+    .home-text-zone h1{
+        font-size: 27px;
+    }
+    .home-text-zone h2 {
+        font-size: 9px;
+    }
+}

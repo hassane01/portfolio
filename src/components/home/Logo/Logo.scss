@@ -1,0 +1,63 @@
+.logo-conrainer{
+    width:400px ;
+    height: 609px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 14%;
+    left: auto;
+    margin: auto;
+    svg{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(30deg);
+    }
+   .solid-logo{
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        opacity: 0;
+        
+        z-index: 1;
+        transform: translate(8px, -19px) rotateZ(30deg);
+      }
+}
+.svg-container{
+    stroke: #ffd700;
+    stroke-width: 2px;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+}
+@media (max-width:1270px){
+    .logo-conrainer{
+        width: 300px;
+        height: 509px;
+    }
+}
+@media (max-width:910px){
+    .logo-conrainer{
+        width: 200px;
+        height: 409px;
+    }
+}
+@media (max-width: 768px){
+    .logo-conrainer{
+        bottom: 40%;
+        left: 12%;
+    }
+}
+@media (max-width: 380px){
+    .logo-conrainer{
+        width: 187px;
+        height: 901px;
+        bottom: -34%;
+    }
+    .logo-conrainer .solid-logo{
+        bottom: 68%;
+    }
+}

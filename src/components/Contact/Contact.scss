@@ -1,0 +1,224 @@
+.contact-form{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+form{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+   
+}
+li{
+    list-style: none;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+   animation: fadeInUp 2s 2s forwards;
+
+
+}
+
+li.half{
+    width: 49%;
+    display: inline;
+    &:first-child{
+        margin-right:2%;
+    }
+}
+input[type='text'],
+input[type='email']{
+    background: #115173;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+    padding-right: 10px;
+}
+textarea{
+    width: 100%;
+    background: #115173;
+    height: 50px;
+    border: none;
+    margin: 0;
+    min-height:150px ;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    color: #ffd700;
+}
+textarea::placeholder{
+    color: #ffd700;
+}
+.flat-btn{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    font-size: 13px;
+    height: 40px;
+    background: transparent;
+    color:#ffd700 ;
+    border: 1px solid #ffd700;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding:  0 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+input , textarea{
+    border-radius: 5px;
+}
+
+.contact-info{
+    
+    background: black;
+    width: 270px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Helvetica";
+    position: absolute;
+    top: 7%;
+    right: 30%;
+    font-weight: 300;
+    z-index: 8888888;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+    padding: 20px;
+    & span{
+        padding-top: 20px;
+        color: #ffd700;
+    }
+}
+.map-container{
+    background:rgba(8, 253, 216, 0.1);
+    width:50% ;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+.leaflet-container{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1s forwards ;
+}
+
+
+.contact-container {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.2s;
+    display: flex;
+}
+.contact-text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 35%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    max-height: 90%;
+    display: table-cell;
+}
+.contact-text-zone h1 {
+    color: #ffd700;
+    font-size: 58px;
+    font-weight: 400;
+    font-family: "Coolvetica";
+    position: relative;
+}
+.contact-text-zone p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    animation: pulse 1s;
+    animation-delay: 1.1s;
+
+}
+
+@media (max-width:1190px){
+    .contact-info{
+        width: 259px;
+        top: 13%;
+        right: 22%;
+        font-weight: 300;
+    }
+
+}
+@media (max-width:1000px){
+    .contact-container .contact-text-zone h1{
+        font-size: 44px;
+    }
+    .contact-container.contact-text-zone p {
+        font-size: 13px;
+    }
+}
+@media (max-width:900px){
+    .map-container{
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .contact-info {
+        top: 100%;
+        right: 0;
+        font-size: 14px;
+    }
+    .contact-form {
+        position: relative;
+        width: 90%;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .contact-text-zone{
+        width: 100%;
+        left: 0;
+        h1 , P{
+            padding-left: 34px;
+        }
+    }
+}
+
