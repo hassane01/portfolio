@@ -14,7 +14,7 @@ function WorkInfo({Isdisplayed , setIsdisplayed }) {
     <div className='work-info'>
       {console.log(typeof(id.id))}
       <GiCancel className='close-icn' onClick={()=>setIsdisplayed(!Isdisplayed)}/>
-     <div className='gif-container'>
+     <div className='gif-container' style={{borderTopRightRadius:'20px', borderTopLeftRadius:'20px', backgroundImage:`url(${project[0].gif})`,backgroundRepeat:'no-repeat' , backgroundSize:'cover' , backgroundPosition:'center',}}>
      </div>
         <div className='info-data'>
             <div className='proj-descrpt'>
@@ -23,7 +23,7 @@ function WorkInfo({Isdisplayed , setIsdisplayed }) {
             <div className='proj-link'>
             <Link target="_blank" to={project[0].demolink}> <button > <FaPlayCircle /> View Demo</button></Link>
             <Link target="_blank" to={project[0].repolink}> <button> <FiGithub /> Github</button></Link>
-              {/* nice working */}
+           
             
             </div>
         </div>
