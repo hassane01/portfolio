@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Works/Works.scss'
 import { GiCancel } from "react-icons/gi";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { data } from '../../assets/Data/Workdata';
 import { FaPlayCircle } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
@@ -21,9 +21,10 @@ function WorkInfo({Isdisplayed , setIsdisplayed }) {
                 <p>{project[0].description}</p>
             </div>
             <div className='proj-link'>
-              <button> <FaPlayCircle /> View Demo</button>
-              <button> <FiGithub /> Github</button>
-             
+            <Link target="_blank" to={project[0].demolink}> <button > <FaPlayCircle /> View Demo</button></Link>
+            <Link target="_blank" to={project[0].repolink}> <button> <FiGithub /> Github</button></Link>
+              
+            
             </div>
         </div>
       

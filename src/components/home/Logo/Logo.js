@@ -12,7 +12,7 @@ function Logo() {
     const outlinrLogoref =useRef()
     const solidLogoRef = useRef()
     useEffect(() => {
-      const timeline = gsap.timeline(); // Store the GSAP timeline in a variable
+      const timeline = gsap.timeline(); 
   
       timeline
         .to(bgref.current, { duration: 1, opacity: 1 })

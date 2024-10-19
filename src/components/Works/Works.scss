@@ -2,10 +2,9 @@
     width: 100%;
     height: 90%;
     min-height: 566px;
-    position: absolute;
-    top:0;
+    position: relative;
+    top:-895px;
     margin: auto;
-    bottom: 0;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -102,6 +101,7 @@
 .img-card {
     width: 100%;
     height: 70%;
+    border-radius: 15px;
     background-size: cover;
     background-position: center;
     transition: all ease-in-out 0.2s;
@@ -228,10 +228,15 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
-        button{
+        a{
             width: 60%;
             height: 40px;
+            text-decoration: none;
+        }
+
+        button{
+            width: 100%;
+            height: 100%;
             background-color: transparent;
             color: #ffd700;
             font-size: 16px;

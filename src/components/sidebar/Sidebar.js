@@ -38,7 +38,7 @@ function Sidebar() {
           </a>
         </li>
         <li>
-          <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/el-hassan-oubakasse-a1a574277'>
+          <a target='_blank' rel='noreferrer' href='https://github.com/hassane01'>
             <FontAwesomeIcon icon={faGithub} color='#4d4d4e'/>
           </a>
         </li>
