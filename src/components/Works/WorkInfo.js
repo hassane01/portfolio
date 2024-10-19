@@ -23,7 +23,7 @@ function WorkInfo({Isdisplayed , setIsdisplayed }) {
             <div className='proj-link'>
             <Link target="_blank" to={project[0].demolink}> <button > <FaPlayCircle /> View Demo</button></Link>
             <Link target="_blank" to={project[0].repolink}> <button> <FiGithub /> Github</button></Link>
-              
+              {/* nice working */}
             
             </div>
         </div>
