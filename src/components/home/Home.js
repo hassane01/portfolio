@@ -37,7 +37,7 @@ function Home() {
             <br/>
              <AnimatedLetter letterclass={letterclass} strarray={jobArray} idx={15}/>
              </h1>
-            <h2>JavasScript / React ...</h2>
+            <h2>JavasScript / React /Css ...</h2>
             <Link to='/contact' className='flat-button'>CONTACT ME</Link>
         </div>
       <Logo/>

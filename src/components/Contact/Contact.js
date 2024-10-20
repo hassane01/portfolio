@@ -34,7 +34,6 @@ function Contact() {
        <h1>
             {<AnimatedLetter strarray={strcontact} idx={15} letterclass={letterclass}/> }
         </h1>
-        <p>Hello guys fell free to contact me </p>
         <div className='contact-form'>
         <form ref={refForm} onSubmit={Sendemail}>
             <ul>

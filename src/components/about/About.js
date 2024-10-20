@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import AnimatedLetter from '../../Animation/AnimatedLetter';
 import { Loader } from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
+import {
     faCss3,
     faGitAlt,
     faHtml5,
     faJsSquare,
-    faReact, 
+    faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import './About.scss';
 import Timeline from './Timeline';
@@ -15,13 +15,13 @@ import Timeline from './Timeline';
 function About() {
     const Abouttitle = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e'];
     const [letterclass, setletterclass] = useState('text-animation');
-    const strarray = ['F','o','r','m','a','t','i','o','n']
+    const strarray = ['F', 'o', 'r', 'm', 'a', 't', 'i', 'o', 'n']
 
-  useEffect(()=>{
-    setTimeout(()=>{
-        setletterclass('text-animation-hover')
-    },3000)
-  },[])
+    useEffect(() => {
+        setTimeout(() => {
+            setletterclass('text-animation-hover')
+        }, 3000)
+    }, [])
 
     useEffect(() => {
         setTimeout(() => {
@@ -37,19 +37,15 @@ function About() {
                         <AnimatedLetter letterclass={letterclass} strarray={Abouttitle} idx={15} />
                     </h1>
                     <p>
-                        I'm a very ambitious front-end developer looking for a role in an
-                        established IT company with the opportunity to work with the latest
-                        technologies on challenging and diverse projects.
+                        Je suis un développeur front-end passionné, avec une profonde affection pour la création d'applications web dynamiques et interactives.
                     </p>
                     <p align="LEFT">
-                        I'm quite confident, naturally curious, and perpetually working on
-                        improving my chops one design problem at a time.
+                        Spécialisé en React, JavaScript et CSS, je me concentre sur la réalisation de designs créatifs avec un code propre et réactif. J'ai perfectionné mes compétences à travers de nombreux cours en ligne, me poussant toujours à apprendre les derniers outils et technologies qui améliorent l'expérience utilisateur.
                     </p>
                     <p>
-                        If I need to define myself in one sentence, that would be a family
-                        person, father of a beautiful daughter, a sports fanatic,
-                        photography enthusiast, and tech-obsessed!!!
+                        Je suis actuellement à la recherche d'opportunités pour travailler dans un environnement collaboratif où je peux utiliser mon expertise en React pour développer des projets impactants.
                     </p>
+
                 </div>
                 <div className='stage-cube-cont'>
                     <div className='cubspinner'>
@@ -74,13 +70,13 @@ function About() {
                     </div>
                 </div>
             </div>
-                <div className='timeline-wrap'>
+            <div className='timeline-wrap'>
                 <h1 >
-      <AnimatedLetter strarray={strarray} letterclass={letterclass} idx={15}/>
-      </h1>
+                    <AnimatedLetter strarray={strarray} letterclass={letterclass} idx={15} />
+                </h1>
                 <Timeline />
             </div>
-          
+
             <Loader type='pacman' />
         </>
     );
