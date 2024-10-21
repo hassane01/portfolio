@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AnimatedLetter from '../../Animation/AnimatedLetter';
 import { Loader } from 'react-loaders';
+import { RiTailwindCssFill } from "react-icons/ri";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCss3,
@@ -65,7 +66,7 @@ function About() {
                             <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
                         </div>
                         <div className='face6'>
-                            <FontAwesomeIcon icon={faGitAlt} color='#EC4D28' />
+                        <RiTailwindCssFill color='#38BDF8'  />
                         </div>
                     </div>
                 </div>
