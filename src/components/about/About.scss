@@ -208,7 +208,7 @@
   .timeline-wrap{
     
     position: absolute;
-    top: 73%;
+    top: 114%;
 }}
 @media (max-width:530px){
   .timeline-wrap{
@@ -285,3 +285,23 @@
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  .stage-cube-cont {top: 71%;}
+}
+@media (max-width: 768px) {
+  .timeline-wrap {
+      top: 131%;
+  }
+}
+  @media (max-width: 768px) {
+  .text-zone {
+      top: 40%;
+      
+  }
+}
+// @media(max-width:921px){
+// .container{
+//   position: relative;
+
+// }
+// }

@@ -22,6 +22,11 @@
     height: auto;
     font-family: 'La Belle Aurore';
 }
+@media(max-width:901px){
+    .tags{
+        display: none;
+    }
+}
 
 .bottom-tag-html {
     margin-left: -20px;
