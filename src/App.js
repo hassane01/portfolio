@@ -6,6 +6,7 @@ import Home from './components/home/Home'
 import About from './components/about/About'
 import Contact from './components/Contact/Contact'
 import Works from './components/Works/Works'
+import './i18n'
 function App() {
   return (
    <>

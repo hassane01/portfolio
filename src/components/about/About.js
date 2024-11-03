@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useTransition } from 'react';
 import AnimatedLetter from '../../Animation/AnimatedLetter';
 import { Loader } from 'react-loaders';
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -12,8 +12,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import './About.scss';
 import Timeline from './Timeline';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+    const {t } = useTranslation()
     const Abouttitle = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e'];
     const [letterclass, setletterclass] = useState('text-animation');
     const strarray = ['F', 'o', 'r', 'm', 'a', 't', 'i', 'o', 'n']
@@ -38,13 +40,13 @@ function About() {
                         <AnimatedLetter letterclass={letterclass} strarray={Abouttitle} idx={15} />
                     </h1>
                     <p>
-                        Je suis un développeur front-end passionné, avec une profonde affection pour la création d'applications web dynamiques et interactives.
+                        {t('about.introduction1')}
                     </p>
                     <p align="LEFT">
-                        Spécialisé en React, JavaScript et CSS, je me concentre sur la réalisation de designs créatifs avec un code propre et réactif. J'ai perfectionné mes compétences à travers de nombreux cours en ligne, me poussant toujours à apprendre les derniers outils et technologies qui améliorent l'expérience utilisateur.
+                        {t('about.introduction2')}
                     </p>
                     <p>
-                        Je suis actuellement à la recherche d'opportunités pour travailler dans un environnement collaboratif où je peux utiliser mon expertise en React pour développer des projets impactants.
+                        {t('about.introduction3')}
                     </p>
 
                 </div>

@@ -2,11 +2,11 @@ import React from 'react'
 import { IoSchool   } from "react-icons/io5";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import '../../Animation/AnimatedLetter.scss'
-
+import { useTranslation } from 'react-i18next';
 import { VerticalTimeline , VerticalTimelineElement } from 'react-vertical-timeline-component' 
 import 'react-vertical-timeline-component/style.min.css'
 function Timeline() {
-  
+  const {t} = useTranslation()
   return (
     <>
     
@@ -28,11 +28,11 @@ function Timeline() {
     }}
     >
     <h1 className='vertical-timeline-element--title'>
-    Lycée Qualifiant Sidi Ouagag
+     {t('about.formation1')}
 
     </h1>
     <h3 className='vertical-timeline-element--subtitle' >
-    Baccalauréat en sciences physiques
+      {t('about.subformation1')}
     </h3>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -48,11 +48,11 @@ function Timeline() {
     >
     <h1 className='vertical-timeline-element--title'>
     
-      ISTA : Institut Spécialisé de Technologie Appliquée_Taddart Agadir
+    {t('about.formation2')}
 
     </h1>
     <h3 className='vertical-timeline-element--subtitle' >
-    DIPLOME DE TECHNICIEN SPÉCIALISÉ EN WEB FULL STACK
+    {t('about.subformation1')}
     </h3>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -71,11 +71,11 @@ function Timeline() {
     >
     <h1 className='vertical-timeline-element--title'>
     
-    Un stage d'un mois au sein de l'entreprise Vala Bleu
+    {t('about.formation3')}
 
     </h1>
     <h3 className='vertical-timeline-element--subtitle' >
-    J'ai créé un site web e-commerce en utilisant React et CSS, avec Sanity pour la gestion de contenu
+    {t('about.subformation1')}
     </h3>
   </VerticalTimelineElement>
 </VerticalTimeline>

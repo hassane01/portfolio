@@ -1,0 +1,24 @@
+{
+  "about": {
+    "introduction1": "I am a passionate front-end developer with a deep affection for creating dynamic and interactive web applications.",
+    "introduction2": "Specializing in React, JavaScript, and CSS, I focus on delivering creative designs with clean, responsive code. I have honed my skills through numerous online courses, always pushing myself to learn the latest tools and technologies that enhance user experience.",
+    "introduction3": " I am currently seeking opportunities to work in a collaborative environment where I can use my expertise in React to develop impactful projects.",
+    "formation1": "Sidi Ouagag High School",
+    "subformation1": "Baccalaureate in Physical Sciences",
+    "formation2": "ISTA: Specialized Institute of Applied Technology_Taddart Agadir",
+    "subformation2": "DIPLOMA OF SPECIALIZED TECHNICIAN IN FULL STACK WEB DEVELOPMENT",
+    "formation3": "One-month internship at Vala Bleu company",
+    "subformation3": "I created an e-commerce website using React and CSS, with Sanity for content management"
+  },
+  "projects": {
+    "cryptoAppName": "Crypto App",
+    "weatherAppName": "Weather App",
+    "cryptoAppTitle": "SuiviCrypto is a React web application that tracks real-time cryptocurrency data, integrating CoinGecko, CoinLore, and interactive charts from TradingView for comprehensive analysis.",
+    "weatherAppTitle": "WeatherApp is a React web application that provides real-time weather forecasts via the OpenWeatherMap API, with city search and Celsius/Fahrenheit conversion.",
+    "cryptoAppDescription": "SuiviCrypto is a web application developed with React that allows users to track cryptocurrency data in real-time. It retrieves data from two different APIs, CoinGecko and CoinLore, to provide comprehensive information about various cryptocurrencies. Users can view detailed information about each cryptocurrency, including market capitalization, price variations, volume, and more. Additionally, SuiviCrypto offers interactive charts powered by TradingView to visualize cryptocurrency trends. Whether you are an experienced investor or simply curious about the cryptocurrency market, SuiviCrypto provides valuable insights into the world of digital currencies.",
+    "weatherAppDescription": "WeatherApp is a web application built with React that allows users to check real-time weather forecasts. It uses the OpenWeatherMap API to retrieve current weather data and short-term forecasts for a given city. Users can also search for weather forecasts for different cities by entering the city name in the search bar. WeatherApp provides a user-friendly interface with intuitive weather icons to help users understand weather conditions easily. Additionally, users have the option to toggle between Celsius and Fahrenheit temperature units with the press of a button.",
+    "cryptoAppSkills": "React.js · JavaScript · React Router · API Context (for state management) · TradingView Widget (for interactive charts) · CSS (for styling) · CoinGecko API (for cryptocurrency data) · CoinLore API (for cryptocurrency data)",
+    "weatherAppSkills": "React.js · JavaScript · CSS (for styling) · API Context (for state management) · OpenWeatherMap API (for weather data) · Axios (for HTTP requests)"
+}
+
+}
