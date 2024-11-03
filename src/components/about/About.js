@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useTransition } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedLetter from '../../Animation/AnimatedLetter';
 import { Loader } from 'react-loaders';
 import { RiTailwindCssFill } from "react-icons/ri";
