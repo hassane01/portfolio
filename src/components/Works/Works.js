@@ -21,7 +21,7 @@ function Works() {
     return () => {
       i18n.off('languageChanged', handleLanguageChange);
     };
-  }, [i18n]);
+  }, []);
   
   useEffect(() => {
     setTimeout(() => {

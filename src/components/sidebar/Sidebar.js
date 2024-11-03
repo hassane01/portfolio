@@ -26,16 +26,32 @@ function Sidebar() {
           <img src={logo} alt="navbar logo" />
         </Link>
         <nav>
-          <NavLink exact='true' onClick={() => setisSidebareopen(!isSidebareopen)} activeclassname='active' to='/'>
+          <NavLink exact='true' onClick={() => {
+    if (isSidebareopen) {
+      setisSidebareopen(!isSidebareopen);
+    }
+  }}   activeclassname='active' to='/'>
             <FontAwesomeIcon  icon={faHome} color='#4d4d4e' />
           </NavLink>
-          <NavLink onClick={() => setisSidebareopen(!isSidebareopen)} exact='true' activeclassname='active' className='about-link' to='/about'>
+          <NavLink onClick={() => {
+    if (isSidebareopen) {
+      setisSidebareopen(!isSidebareopen);
+    }
+  }}  exact='true' activeclassname='active' className='about-link' to='/about'>
             <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
           </NavLink>
-          <NavLink onClick={() => setisSidebareopen(!isSidebareopen)} exact='true' activeclassname='active' className='contact-link' to='/contact'>
+          <NavLink onClick={() => {
+    if (isSidebareopen) {
+      setisSidebareopen(!isSidebareopen);
+    }
+  }}  exact='true' activeclassname='active' className='contact-link' to='/contact'>
             <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
           </NavLink>
-          <NavLink onClick={() => setisSidebareopen(!isSidebareopen)} exact='true' activeclassname='active' className='works-link' to='/works'>
+          <NavLink onClick={() => {
+    if (isSidebareopen) {
+      setisSidebareopen(!isSidebareopen);
+    }
+  }}  exact='true' activeclassname='active' className='works-link' to='/works'>
             <FaNetworkWired />
           </NavLink>
           <button onClick={toggleLanguage}>{i18n.language === 'fr' ? 'EN' : 'FR'}</button> {/* Update button text based on language */}

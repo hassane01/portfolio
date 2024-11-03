@@ -223,40 +223,48 @@
     }
     
     .proj-link{
-        flex: 20%;
+        flex:20%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
+       
         align-items: center;
         a{
             width: 60%;
             height: 40px;
             text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            
+            button{
+                
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                color: #ffd700;
+                font-size: 16px;
+                font-family: 'Helvetica Neue';
+                border: 1px solid #ffd700;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                transition: all ease-in-out 0.3s;
+                &:hover{
+                    background-color: #ffd700;
+                    color: #022c43;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    svg{
+                        color: #022c43;
+                    }
+                }
         }
 
-        button{
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-            color: #ffd700;
-            font-size: 16px;
-            font-family: 'Helvetica Neue';
-            border: 1px solid #ffd700;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            transition: all ease-in-out 0.3s;
-            &:hover{
-                background-color: #ffd700;
-                color: #022c43;
-                cursor: pointer;
-                border-radius: 20px;
-                svg{
-                    color: #022c43;
-                }
-            }
+        
             svg{
                 font-size: 30px;
             }
@@ -267,7 +275,19 @@
     }
 
 }
-
+@media (max-width:1083px){
+    .info-data .proj-link a button{
+        font-size: 10px;
+    }
+}
+@media (max-width:502px){
+    .info-data .proj-link a button{
+        font-size: 8px;
+    }
+    .proj-link a {
+        margin: 0px;
+    }
+}
 @media (max-width:920px){
     .projects-container .grid-cards{
         grid-template-columns: repeat(1,1fr);
