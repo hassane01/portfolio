@@ -11,14 +11,19 @@
     "subformation3": "I created an e-commerce website using React and CSS, with Sanity for content management"
   },
   "projects": {
-    "cryptoAppName": "Crypto App",
     "weatherAppName": "Weather App",
-    "cryptoAppTitle": "SuiviCrypto is a React web application that tracks real-time cryptocurrency data, integrating CoinGecko, CoinLore, and interactive charts from TradingView for comprehensive analysis.",
     "weatherAppTitle": "WeatherApp is a React web application that provides real-time weather forecasts via the OpenWeatherMap API, with city search and Celsius/Fahrenheit conversion.",
-    "cryptoAppDescription": "SuiviCrypto is a web application developed with React that allows users to track cryptocurrency data in real-time. It retrieves data from two different APIs, CoinGecko and CoinLore, to provide comprehensive information about various cryptocurrencies. Users can view detailed information about each cryptocurrency, including market capitalization, price variations, volume, and more. Additionally, SuiviCrypto offers interactive charts powered by TradingView to visualize cryptocurrency trends. Whether you are an experienced investor or simply curious about the cryptocurrency market, SuiviCrypto provides valuable insights into the world of digital currencies.",
     "weatherAppDescription": "WeatherApp is a web application built with React that allows users to check real-time weather forecasts. It uses the OpenWeatherMap API to retrieve current weather data and short-term forecasts for a given city. Users can also search for weather forecasts for different cities by entering the city name in the search bar. WeatherApp provides a user-friendly interface with intuitive weather icons to help users understand weather conditions easily. Additionally, users have the option to toggle between Celsius and Fahrenheit temperature units with the press of a button.",
+    "weatherAppSkills": "React.js · JavaScript · CSS (for styling) · API Context (for state management) · OpenWeatherMap API (for weather data) · Axios (for HTTP requests)",
+    "cryptoAppName": "Crypto App",
+    "cryptoAppTitle": "SuiviCrypto is a React web application that tracks real-time cryptocurrency data, integrating CoinGecko, CoinLore, and interactive charts from TradingView for comprehensive analysis.",
+    "cryptoAppDescription": "SuiviCrypto is a web application developed with React that allows users to track cryptocurrency data in real-time. It retrieves data from two different APIs, CoinGecko and CoinLore, to provide comprehensive information about various cryptocurrencies. Users can view detailed information about each cryptocurrency, including market capitalization, price variations, volume, and more. Additionally, SuiviCrypto offers interactive charts powered by TradingView to visualize cryptocurrency trends. Whether you are an experienced investor or simply curious about the cryptocurrency market, SuiviCrypto provides valuable insights into the world of digital currencies.",
     "cryptoAppSkills": "React.js · JavaScript · React Router · API Context (for state management) · TradingView Widget (for interactive charts) · CSS (for styling) · CoinGecko API (for cryptocurrency data) · CoinLore API (for cryptocurrency data)",
-    "weatherAppSkills": "React.js · JavaScript · CSS (for styling) · API Context (for state management) · OpenWeatherMap API (for weather data) · Axios (for HTTP requests)"
-}
+    "Modernewebsite": "Modern Website",
+    "moderneAppTitle": "Responsive Modern Website",
+    "moderneAppDescription": "This project is a sleek, modern website that brings a Figma design to life using React, Vite, and Tailwind CSS. It features clean, minimalist aesthetics with reusable components for efficient updates and scalability. React enables fast, responsive navigation, while Vite enhances development with quick builds and hot-reloading. Tailwind CSS ensures consistent, responsive styling across devices, making this project both visually appealing and highly maintainable.",
+    "moderneAppSkills": "React.js · Vite · Tailwind CSS "
+
+  }
 
 }

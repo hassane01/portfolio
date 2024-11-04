@@ -43,13 +43,14 @@ nav{
         font-weight:  'Helvetica Neue';
         transition: all ease-in-out 0.3s;
     
-        button:hover{
-            cursor: pointer;
-            background-color: #ffd700;
-            color: black;
-            border:  white 2px solid;
-            transform: translateY(-10px);
-        }
+        
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: #ffd700;
+        color: black;
+        border:  white 2px solid;
+        transform: translateY(-10px);
     }
     a{
         display: block;
