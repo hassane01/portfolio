@@ -11,6 +11,10 @@
     "subformation3": "I created an e-commerce website using React and CSS, with Sanity for content management"
   },
   "projects": {
+    "facedetectAppName": "FaceDetectApp",
+    "facedetectAppTitle": "FaceDetectApp – Real‑Time Facial Recognition Web Application",
+    "facedetectAppDescription": "FaceDetectApp is a React‑ and TypeScript‑based web application (built with Vite and styled with Tailwind CSS) that captures either a live webcam stream or a user‑uploaded image and uses face‑api.js (powered by TensorFlow.js) to detect faces, estimate age and gender, and recognize emotions in real time. It leverages Redux Toolkit to manage detection results and uploaded image state, and synchronizes an HTML <canvas> overlay to draw bounding boxes and informative labels. Deployed on Netlify (or Vercel/Heroku), the app is fully responsive and delivers a smooth, interactive experience for in‑browser facial analysis..",
+    "facedetectAppSkills": "React . TypeScript . Vite . Tailwind CSS . Redux . Toolkit . face‑api.js . Custom Hooks . Git & GitHub . Type‑Safe . Redux Hook",
     "weatherAppName": "Weather App",
     "weatherAppTitle": "WeatherApp is a React web application that provides real-time weather forecasts via the OpenWeatherMap API, with city search and Celsius/Fahrenheit conversion.",
     "weatherAppDescription": "WeatherApp is a web application built with React that allows users to check real-time weather forecasts. It uses the OpenWeatherMap API to retrieve current weather data and short-term forecasts for a given city. Users can also search for weather forecasts for different cities by entering the city name in the search bar. WeatherApp provides a user-friendly interface with intuitive weather icons to help users understand weather conditions easily. Additionally, users have the option to toggle between Celsius and Fahrenheit temperature units with the press of a button.",
@@ -23,7 +27,7 @@
     "moderneAppTitle": "Responsive Modern Website",
     "moderneAppDescription": "This project is a sleek, modern website that brings a Figma design to life using React, Vite, and Tailwind CSS. It features clean, minimalist aesthetics with reusable components for efficient updates and scalability. React enables fast, responsive navigation, while Vite enhances development with quick builds and hot-reloading. Tailwind CSS ensures consistent, responsive styling across devices, making this project both visually appealing and highly maintainable.",
     "moderneAppSkills": "React.js · Vite · Tailwind CSS "
-
+    
   }
 
 }

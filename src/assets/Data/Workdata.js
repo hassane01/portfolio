@@ -4,10 +4,23 @@ import weathergif from '../../assets/videos/weathervid.gif';
 import cryptogif from '../../assets/videos/cryptovid.gif';
 import robotimg from '../../assets/robot.png'
 import medernegif from '../../assets/videos/modernevid.gif'
+import facedetectimg from '../../assets/facedetecter.jpg'
+import facedetectgif from '../../assets/videos/facedetectetvid.gif'
 
 export const data = [
   {
     id: 1,
+    name: 'facedetectAppName', // translation key
+    demolink: 'https://facedetecter.netlify.app/',
+    repolink: 'https://github.com/hassane01/face-detecter',
+    image: facedetectimg,
+    gif: facedetectgif,
+    title: 'facedetectAppTitle', // translation key
+    description: 'facedetectAppDescription', // translation key
+    skills: 'facedetectAppSkills', // translation key
+  },
+  {
+    id: 2,
     name: 'cryptoAppName', // translation key
     demolink: 'https://app-crypto1.netlify.app/',
     repolink: 'https://github.com/hassane01/crypto-app',
